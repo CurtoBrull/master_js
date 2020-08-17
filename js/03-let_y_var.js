@@ -20,11 +20,11 @@ console.log(numero); // Aqui 50
 // VAR es una variable global
 
 var texto = "Curso JS";
-console.log(texto);
+console.log(texto); // Curso JS
 
 if (true) {
-    let texto = "Curso Laravel 5";
-    console.log(texto);
+    let texto = "Curso Laravel 5"; 
+    console.log(texto); // Curso Laravel 5
 }
 
-console.log(texto);
+console.log(texto); // Curso JS
