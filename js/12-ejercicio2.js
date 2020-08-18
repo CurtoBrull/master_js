@@ -14,7 +14,8 @@ do {
 	if (isNaN(numero)) {
 		numero = 0;
 	} else if (numero >= 0) {
-		suma = suma + numero; // suma += numero;
+		// suma += numero; A "numero" se suma el valor de "suma" y el resultado se vuelve a asignar a "suma" =>
+		suma = suma + numero; 
 		contador++;
 	}
 	console.log(suma, contador);
