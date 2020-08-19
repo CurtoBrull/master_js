@@ -14,7 +14,6 @@ function holaMundo(texto) {
 
 holaMundo(texto);
 
-// hola_mundo No funciona ya que se ha creado la variable dentro de una funcion
-// de forma local
+// la variable hola_mundo no es accesible desde el exterior de la funcion ya que se ha creado la variable dentro de una funcion y tiene un alcance local
 
-// console.log(hola_mundo);
+console.log(hola_mundo);

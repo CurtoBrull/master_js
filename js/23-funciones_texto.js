@@ -1,29 +1,38 @@
 "use strict";
 
-// Transformación de textos
-
 var numero = 444;
-var texto1 = "Bienvenido al curso de JS de VR, buen curso";
+var texto1 = "Bienvenido al curso de JS de VR";
 var texto2 = "Es muy buen curso";
 
-var dato = numero.toString();
-    dato = texto1.toUpperCase();
-    dato = texto2.toLowerCase();
+// Transformación de textos
 
-console.log(dato);
+var dato1 = numero.toString();
+var dato2 = texto1.toUpperCase();
+var dato3 = texto2.toLowerCase();
+
+console.log(dato1);
+console.log("dato1 444 ha sido transformado a " + typeof dato1);
+console.log(`"${texto1}" ha sido transformado a "${dato2}"`);
+console.log(`"${texto2}" ha sido transformado a "${dato3}"`);
+
 
 // Calcular longitud
 
-var nombre = "Javier Curto Brull";
-var nombre = ["hola", "hola"]; // Cuenta número de elementos
 
-console.log(nombre.length);
+var nombre1 = "Javier Curto Brull";
+var nombre = ["hola", "hola"]; 
+
+// longitudes empiezan en 0
+console.log(nombre1.length); // numero de letras
+console.log(nombre.length); // Cuenta número de elementos del array
+console.log(nombre[0]);
 
 // Concatenar
 
 // var texto_total = texto1 + " " + texto2;
 
-var texto_total = texto1.concat(" " + texto2);
+// metodo .CONCAT
+var texto_total = texto1.concat(". " + texto2);
 
 console.log(texto_total);
 
@@ -32,13 +41,24 @@ console.log(texto_total);
 var busqueda1 = texto1.indexOf("curso"); // 1ª coincidencia, de no existir da -1
 var busqueda2 = texto1.search("curso"); // Igual que el anterior
 var busqueda3 = texto1.lastIndexOf("curso"); // Última coincidencia
+
 var busqueda4 = texto1.match("curso"); // Crea un array con los resultados
+
+// Creando expresión regular con / y la /g de global
 var busqueda5 = texto1.match(/curso/g); // Busqueda global
+
+// Substraer (desde, hasta n adelante)
 var busqueda6 = texto1.substr(4,6); // Saca desde el caracter X (4 en este caso) hasta Y puestos hacia delante (6 en este caso)
-var busqueda7 = texto1.charAt(33); // Saca la letra que indiquemos
-var busqueda8 = texto1.startsWith("Bienvenido"); // Da true o false segun empiece el string con el valor indicado
-var busqueda9 = texto1.endsWith("Bienvenido"); // Da true o false segun termine el string con el valor indicado
-var busqueda10 = texto1.includes("JS"); // Da true o false segun encuentre en el string el valor indicado
+
+// chartAt Saca la letra que indiquemos
+var busqueda7 = texto1.charAt(33); 
+
+// startsWith Da true o false segun empiece el string con el valor indicado
+var busqueda8 = texto1.startsWith("Bienvenido");
+// endsWith Da true o false segun termine el string con el valor indicado
+var busqueda9 = texto1.endsWith("Bienvenido");
+// includes Da true o false segun encuentre en el string el valor indicado
+var busqueda10 = texto1.includes("JS"); 
 
 console.log(busqueda1); 
 console.log(busqueda2); 
