@@ -93,3 +93,6 @@ var division = num / num2
 alert(`${num} + ${num2} = `+ suma + '\n' + `${num} - ${num2} = ` + resta + '\n' + `${num} x ${num2} = ` + multi + '\n' +  `${num} / ${num2} = ` + division)
 
 console.log(`${num} + ${num2} = `+ suma + '\n' + `${num} - ${num2} = ` + resta + '\n' + `${num} x ${num2} = ` + multi + '\n' +  `${num} / ${num2} = ` + division)
+
+
+

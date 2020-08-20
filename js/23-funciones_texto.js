@@ -39,7 +39,8 @@ console.log(texto_total);
 // Buscar
 
 var busqueda1 = texto1.indexOf("curso"); // 1ª coincidencia, de no existir da -1
-var busqueda2 = texto1.search("curso"); // Igual que el anterior
+// Para realizar busquedas ignorando mayusculas /i hay que poner la busqueda entre / x /
+var busqueda2 = texto1.search(/curso/i); // Igual que el anterior
 var busqueda3 = texto1.lastIndexOf("curso"); // Última coincidencia
 
 var busqueda4 = texto1.match("curso"); // Crea un array con los resultados
