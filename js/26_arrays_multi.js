@@ -58,3 +58,10 @@ console.log(peliculas);
 
 var peliculas_string = peliculas.join(', ')
 console.log(peliculas_string);
+
+// Convertir string a array
+
+var cadena = 'Texto 1, texto2, texto3'
+var cadena_array = cadena.split(', ')
+
+console.log(cadena_array)
