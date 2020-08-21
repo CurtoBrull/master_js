@@ -48,6 +48,9 @@ for (let i = 0; i < lenguajes.length; i++) {
 }
 document.write("</ul>")
 
+console.log("--------------------")
+document.write("--------------------")
+
 // Lo mismo con un for each
 // for each nos pide un elemento, el índice (opcional) y un array (opcional) que nos mostrara el array utilizado
 // elemento = nombre del array en este caso
@@ -56,3 +59,27 @@ lenguajes.forEach((elemento, index, arr) => {
   document.write("<li>"+ index + " - " + elemento + "</li>")
   console.log(arr);
 });
+
+
+
+// for in requiere declarar una variable y un objeto a ser iterado
+// recorre las propiedades de un objeto o array y lista los nombres de las propiedades y sus valores
+
+console.log("--------------------")
+document.write("--------------------")
+
+for(let lenguaje in lenguajes){
+  // Necesita el nombre del objeto y entre [] la variable
+  document.write("<li>" + lenguajes[lenguaje] + "</li>")
+}
+
+// Busquedas
+
+// .find necesita una funcion de callback
+
+var busqueda = lenguajes.find(function(lenguaje){
+  return lenguaje == "Java"
+})
+
+console.log(busqueda)
+
