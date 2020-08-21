@@ -65,3 +65,12 @@ var cadena = 'Texto 1, texto2, texto3'
 var cadena_array = cadena.split(', ')
 
 console.log(cadena_array)
+
+// Ordenar alfabéticamente
+
+console.log(cadena_array.sort())
+
+// Ordenar de forma inversa
+
+console.log(cadena_array.reverse())
+
