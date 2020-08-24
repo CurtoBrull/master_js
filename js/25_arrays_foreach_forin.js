@@ -48,8 +48,8 @@ for (let i = 0; i < lenguajes.length; i++) {
 }
 document.write("</ul>")
 
-console.log("--------------------")
-document.write("--------------------")
+console.log("--------for each--------")
+document.write("-------for each-------")
 
 // Lo mismo con un for each
 // for each nos pide un elemento, el índice (opcional) y un array (opcional) que nos mostrara el array utilizado
@@ -65,21 +65,36 @@ lenguajes.forEach((elemento, index, arr) => {
 // for in requiere declarar una variable y un objeto a ser iterado
 // recorre las propiedades de un objeto o array y lista los nombres de las propiedades y sus valores
 
-console.log("--------------------")
-document.write("--------------------")
+document.write("-------for in--------")
 
 for(let lenguaje in lenguajes){
   // Necesita el nombre del objeto y entre [] la variable
   document.write("<li>" + lenguajes[lenguaje] + "</li>")
 }
 
+console.log("-------find--------")
+
 // Busquedas
 
 // .find necesita una funcion de callback
 
-var busqueda = lenguajes.find(function(lenguaje){
-  return lenguaje == "Java"
-})
+// var busqueda = lenguajes.find(function(lenguaje){
+//   return lenguaje == "Java"
+// })
+
+var busqueda = lenguajes.find(lenguaje => lenguaje == "Java")
+var busqueda2 = lenguajes.findIndex(lenguaje => lenguaje == "Java")
 
 console.log(busqueda)
+console.log(busqueda2)
 
+console.log("--------some---------")
+
+
+var precios = [10, 20, 30, 50, 80, 12]
+
+// some para buscar elementos con una condicion concreta
+
+var busqueda3 = precios.some(precio => precio >= "90")
+
+console.log(busqueda3)
