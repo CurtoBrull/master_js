@@ -17,6 +17,24 @@ window.addEventListener('load', () => {
     var apellidos = document.querySelector('#apellidos').value
     var edad = document.querySelector('#edad').value
 
+    // Validación formulario
+    // trim() para que no haya valores vacios delante o detrás
+    if (nombre.trim() == null || nombre.trim().length == 0 || !isNaN(nombre)) {
+      alert('El nombre no es válido')
+      document.querySelector('.error_nombre').innerHTML = 'Error en el nombre' // Inserta en el span el mensaje indicado si entra el error
+      return false
+    }else {
+      document.querySelector('.error_nombre').style.display = 'none' // Oculta el span si no hay error
+    }
+    if (apellidos.trim() == null || apellidos.trim().length == 0 || !isNaN(apellidos) ) {
+      alert('Los apellidos no son válidos')
+      return false
+    }
+    if (edad.trim() == null || edad <= 0 || edad >= 130 || isNaN(edad)) {
+      alert('La edad no es válida')
+      return false
+    }
+
     // cuando se haga submit aparecera la caja
     box_dashed.style.display = 'block'
 

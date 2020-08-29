@@ -25,11 +25,13 @@
       1. Formulario: nombre apellidos edad
       2. Boton enviar formulario: evento submit
       3. Mostrar datos por pantalla
+      4. Validación formulario
     -->
 		<div class="box">
 			<form action="#" method="POST" id="formulario" onsubmit="return false">
 				<label for="nombre">Nombre:</label><br />
-				<input type="text" name="nombre" id="nombre" /><br />
+        <span class="error_nombre"></span>
+        <input type="text" name="nombre" id="nombre" /><br />
 
 				<label for="apellidos">Apellidos:</label><br />
 				<input type="text" name="apellidos" id="apellidos" /><br />
